@@ -1,6 +1,5 @@
 # UIKitAppWithCocos2dx
 
-[中文介绍](#)
 An example of a traditional UIKit App integration cocos2dx. cocos2dx is the latest version of 3.15.1.
 
 Most of the tutorials that can be found online are mostly integrating UIKit with the cocos2dx project template and lacking the integration of cocos2dx with a traditional UIKit App project that has been maintained for a long time. And the searchable tutorial is also based on the 2.x version, and now cocos2dx has been upgraded to 3.15.1.
@@ -117,4 +116,51 @@ pDirector->setOpenGLView(glview);
 pDirector->setClearColor(cocos2d::Color4F::WHITE);
 app->run();
 
+```
+
+## Objective-C与Cocos2d-x的交互
+
+在UIKit App中既然集成了cocos2dx，就不可避免的要调用原生App中的相关方法实现某些业务逻辑。
+
+创建`.h`和`.mm`混编文件。
+
+`.h`文件
+
+```
+#ifndef BPGameConnect_h
+#define BPGameConnect_h
+
+void popController();
+
+#endif
+```
+
+`.mm`文件
+
+```
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "BPGameConnect.h"
+#import "DCURLNavgation.h"
+void popController()
+{
+//do something
+}
+
+```
+
+此处的示例为返回上一级页面。
+
+在cpp文件中导入头文件
+```
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+#include "BPGameConnect.h"
+#endif
+```
+
+在需要的事件中调用
+```
+#if(CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+popController();
+#else
 ```
