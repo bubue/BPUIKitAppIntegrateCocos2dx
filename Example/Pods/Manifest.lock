@@ -1,0 +1,16 @@
+PODS:
+  - UIKitAppWithCocos2dx (0.1.0)
+
+DEPENDENCIES:
+  - UIKitAppWithCocos2dx (from `../`)
+
+EXTERNAL SOURCES:
+  UIKitAppWithCocos2dx:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UIKitAppWithCocos2dx: aa87f2c43d8c349e557499ff8774973406f93bd5
+
+PODFILE CHECKSUM: e10afbc4ff3cabb8e0349230d8833e3a50168776
+
+COCOAPODS: 1.4.0.beta.1

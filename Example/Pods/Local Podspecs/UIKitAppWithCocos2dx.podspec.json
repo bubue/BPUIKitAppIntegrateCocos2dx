@@ -1,0 +1,22 @@
+{
+  "name": "UIKitAppWithCocos2dx",
+  "version": "0.1.0",
+  "summary": "A short description of UIKitAppWithCocos2dx.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/bubue/UIKitAppWithCocos2dx",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bubue": "hi@bubue.cn"
+  },
+  "source": {
+    "git": "https://github.com/bubue/UIKitAppWithCocos2dx.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIKitAppWithCocos2dx/Classes/**/*"
+}

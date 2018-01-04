@@ -1,0 +1,6 @@
+framework module UIKitAppWithCocos2dx {
+  umbrella header "UIKitAppWithCocos2dx-umbrella.h"
+
+  export *
+  module * { export * }
+}

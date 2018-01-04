@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UIKitAppWithCocos2dx_Example' do
+  pod 'UIKitAppWithCocos2dx', :path => '../'
+
+  target 'UIKitAppWithCocos2dx_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
